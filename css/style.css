@@ -61,10 +61,13 @@
     background-position: 50% 50%;
 }
 
-@media(max-width: 464px){
-    .hero{
+@media(max-width: 400px){
+    .hero h2{
         font-size: 3rem;
         font-weight: 550;
+    }
+    .main{
+        height: 70vh;
     }
 }
 .main h2{
