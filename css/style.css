@@ -1,7 +1,5 @@
-*{
-    overflow-y: auto;
-    overflow-x: hidden;
-}
+
+
 * {
     padding: 0%;
     margin: 0%;
@@ -62,7 +60,7 @@
 }
 
 @media(max-width: 400px){
-    .hero h2{
+    .hero{
         font-size: 2rem;
         font-weight: 550;
         overflow-y: hidden;
@@ -107,11 +105,11 @@
     transition: .0.5s;
 
 }
-.contain{
+/* .contain{
     display: flex;
-}
+} */
 
-.h1{
+h1{
     font-weight: 700px;
 }
 
