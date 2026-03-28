@@ -1,146 +1,116 @@
-
-
+/* RESET */
 * {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-  }
+}
 
-.navbar-brand{
+/* NAVBAR */
+.navbar-brand {
     font-size: 2rem;
     color: black;
-    font-family: 'lobster',sans-serif;
+    font-family: 'Lobster', cursive;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
     color: black;
 }
 
-.nav-link{
-
-    margin-left: 10px;
-    margin-right: 10px;
+.nav-link {
+    margin: 0 10px;
     color: black;
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
 }
 
-.nav-link:hover{
-    color: black;
+.nav-link:hover {
+    color: rgb(248, 48, 92);
 }
 
-.search{
+/* SEARCH */
+.search {
     height: 40px;
-    width: 80%;
+    width: 70%;
     border-radius: 60px;
     outline: none;
-    margin-right:-30px;
-    border: 2px solid rgb(248,48,92);
-    font-family: Rubik, sans-serif;
-
+    border: 2px solid rgb(248, 48, 92);
+    padding-left: 15px;
 }
 
-.btn0{
+.btn0 {
     height: 40px;
-    width: 40%;
-    outline: none;
+    width: 30%;
     border: none;
-    background: rgb(248,48,92);
+    background: rgb(248, 48, 92);
     color: white;
     font-weight: 700;
     border-radius: 60px;
+    margin-left: 5px;
 }
 
-.main{
-    background: url('/images/d1.jpg') no-repeat;
-    background-size: cover;
+/* HERO SECTION */
+.main {
+    background: url('../images/d1.jpg') no-repeat center center/cover;
     height: 100vh;
     width: 100%;
-    background-position: 50% 50%;
 }
 
-@media(max-width: 400px){
-    .hero{
-        font-size: 2rem;
-        font-weight: 550;
-        overflow-y: hidden;
-    }
-    .main{
-        height: 70vh;
-    }
-}
-.main h2{
+.main h2 {
     font-size: 4rem;
     font-weight: 700;
+    color: white;
 }
 
-.btn1{
+/* BUTTONS */
+.btn1,
+.btn4 {
     height: 45px;
+    border: none;
+    background-color: rgb(248, 48, 92);
+    color: white;
+    border-radius: 60px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn1 {
     width: 35%;
-    border: none;
-    outline: none;
-    background-color:rgb(248,48,92) ;
-    color: white;
-    border-radius: 60px;
-    font-weight: 700;
-    padding: auto;
 }
 
-.btn4{
-    height: 45px;
+.btn4 {
     width: 50%;
-    border: none;
-    outline: none;
-    background-color:rgb(248,48,92) ;
-    color: white;
-    border-radius: 60px;
-    font-weight: 700;
-    padding: auto;
 }
 
-
-.btn1:hover{
-
-    background-color: rgb(255,50,80);
-    transition: .0.5s;
-
-}
-/* .contain{
-    display: flex;
-} */
-
-h1{
-    font-weight: 700px;
+.btn1:hover,
+.btn4:hover {
+    background-color: rgb(255, 50, 80);
 }
 
-.apple{
-    background: linear-gradient(rgb(0,0,0,0.2),rgba(0,0,0,0.2)),url(/images/d3.jpg)no-repeat;
-    background-size: cover;
+/* TYPOGRAPHY */
+h1 {
+    font-weight: 700; /* FIXED (removed px) */
+}
+
+/* APPLE SECTION */
+.apple {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url('../images/d3.jpg') no-repeat center center/cover;
     height: 80vh;
     width: 100%;
-    object-fit: cover;
-    background-position: 50% 50%;
-}
-.apple h1{
-    font-family: 'lobster','cursive';
-
+    color: white;
 }
 
-.news{
+.apple h1 {
+    font-family: 'Lobster', cursive;
+}
+
+/* NEWS / FOOTER */
+.news {
     background-color: black;
     color: white;
 }
 
-.btn2{
-    height: 45px;
-    width: 100px;
-    background: white;
-    margin-left: 10px;
-    border: solid 2px white;
-    font-weight: 600;
-}
-
-.news input{
+.news input {
     height: 45px;
     width: 55%;
     border: 2px solid white;
@@ -148,25 +118,148 @@ h1{
     background-color: black;
     color: white;
     margin-top: 20px;
-    font-weight: 600;
+    padding-left: 10px;
 }
 
-.news::placeholder{
+/* FIXED placeholder selector */
+.news input::placeholder {
     color: white;
 }
 
-.news p{
-    margin:0 ;
+.btn2 {
+    height: 45px;
+    width: 100px;
+    background: white;
+    margin-left: 10px;
+    border: 2px solid white;
+    font-weight: 600;
 }
 
-.fab{
-    font-size: 2.5rem;
+.news p {
+    margin: 0;
+}
+
+/* SOCIAL ICONS */
+.fab {
+    font-size: 2rem;
     cursor: pointer;
     padding-right: 10px;
+    transition: 0.3s;
 }
 
-.card:hover{
+.fab:hover {
+    color: rgb(248, 48, 92);
+}
+
+/* CARD HOVER EFFECT */
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
     box-shadow: 2px -1px 25px -4px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 2px -1px 25px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px -1px 25px -4px rgba(0,0,0,0.75);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+    .main h2 {
+        font-size: 2rem;
+    }
+
+    .btn1,
+    .btn4 {
+        width: 80%;
+    }
+
+    .search {
+        width: 60%;
+    }
+}
+
+@media (max-width: 400px) {
+    .main {
+        height: 70vh;
+    }
+}
+
+
+
+    /* APPLE */
+    .apple {
+        height: auto;
+        padding: 60px 20px;
+        text-align: center;
+    }
+}
+
+
+/* ================= MOBILE (576px - 767px) ================= */
+@media (max-width: 767px) {
+
+    /* HERO */
+    .main h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* BUTTONS */
+    .btn1, .btn4 {
+        width: 85%;
+    }
+
+    /* NEWS INPUT */
+    .news input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn2 {
+        width: 100%;
+    }
+
+    /* TEXT ALIGN */
+    .apple,
+    .contact,
+    .about {
+        text-align: center;
+    }
+}
+
+
+/* ================= SMALL PHONES (≤575px) ================= */
+@media (max-width: 575px) {
+
+    /* HERO */
+    .main {
+        padding: 60px 15px;
+    }
+
+    .main h2 {
+        font-size: 1.6rem;
+    }
+
+    /* HEADINGS */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 0.9rem;
+    }
+
+    /* BUTTONS */
+    .btn1, .btn4 {
+        width: 100%;
+    }
+
+    /* CARDS */
+    .card {
+        margin-bottom: 15px;
+    }
+
+    /* SOCIAL ICONS */
+    .fab {
+        font-size: 1.8rem;
+    }
 }
