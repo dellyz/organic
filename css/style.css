@@ -58,16 +58,14 @@
     background-position: 50% 50%;
 }
 
-/*@media(max-width: 400px){
+@media(max-width: 400px){
     .hero{
-        font-size: 2rem;
-        font-weight: 550;
+        font-size: 3rem;
+        font-weight: 600;
         overflow-y: hidden;
+    
     }
-    .main{
-        height0vh;
-    }
-}*/
+}
 .main h1{
     font-size: 4rem;
     font-weight: 700;
@@ -98,7 +96,7 @@
 }
 
 .btn5{
-    height: 50px;
+    height: 45px;
     width: 50%;
     border: none;
     outline: none;
