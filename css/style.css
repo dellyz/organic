@@ -4,6 +4,7 @@
     box-sizing: border-box;
   }
 
+
 .navbar-brand{
     font-size: 2rem;
     color: black;
@@ -11,7 +12,7 @@
 }
 
 .navbar-brand:hover{
-    color: black;
+    color: rgb(129, 9, 103);
 }
 
 .nav-link{
@@ -183,6 +184,10 @@ body {
   .navbar .btn0 {
     width: 100%;
   }
+}
+
+.icons:hover{
+    color: rgb(233, 34, 150);
 }
 
 /* HERO SECTION */
