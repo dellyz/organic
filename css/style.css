@@ -1,116 +1,140 @@
-/* RESET */
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
     box-sizing: border-box;
-}
+  }
 
-/* NAVBAR */
-.navbar-brand {
+.navbar-brand{
     font-size: 2rem;
     color: black;
-    font-family: 'Lobster', cursive;
+    font-family: 'lobster',sans-serif;
 }
 
-.navbar-brand:hover {
+.navbar-brand:hover{
     color: black;
 }
 
-.nav-link {
-    margin: 0 10px;
+.nav-link{
+
+    margin-left: 10px;
+    margin-right: 10px;
     color: black;
-    font-family: 'Rubik', sans-serif;
+    font-family: Rubik, sans-serif;
     text-transform: uppercase;
 }
 
-.nav-link:hover {
-    color: rgb(248, 48, 92);
+.nav-link:hover{
+    color: black;
 }
 
-/* SEARCH */
-.search {
+.search{
     height: 40px;
-    width: 70%;
+    width: 80%;
     border-radius: 60px;
     outline: none;
-    border: 2px solid rgb(248, 48, 92);
-    padding-left: 15px;
+    margin-right:-30px;
+    border: 2px solid rgb(248,48,92);
+    font-family: Rubik, sans-serif;
+
 }
 
-.btn0 {
+.btn0{
     height: 40px;
-    width: 30%;
+    width: 40%;
+    outline: none;
     border: none;
-    background: rgb(248, 48, 92);
+    background: rgb(248,48,92);
     color: white;
     font-weight: 700;
     border-radius: 60px;
-    margin-left: 5px;
 }
-
-/* HERO SECTION */
-.main {
-    background: url('../images/d1.jpg') no-repeat center center/cover;
+/*---hero secton*/
+.main{
+    background: url('/images/d1.jpg') no-repeat;
+    background-size: cover;
     height: 100vh;
     width: 100%;
+    background-position: 50% 50%;
 }
 
-.main h2 {
+/*@media(max-width: 400px){
+    .hero{
+        font-size: 2rem;
+        font-weight: 550;
+        overflow-y: hidden;
+    }
+    .main{
+        height0vh;
+    }
+}*/
+.main h1{
     font-size: 4rem;
     font-weight: 700;
-    color: white;
 }
 
-/* BUTTONS */
-.btn1,
-.btn4 {
+.btn1{
     height: 45px;
+    width: 35%;
     border: none;
-    background-color: rgb(248, 48, 92);
+    outline: none;
+    background-color:rgb(248,48,92) ;
     color: white;
     border-radius: 60px;
     font-weight: 700;
-    transition: 0.3s;
+    padding: auto;
 }
 
-.btn1 {
-    width: 35%;
-}
-
-.btn4 {
+.btn4{
+    height: 45px;
     width: 50%;
+    border: none;
+    outline: none;
+    background-color:rgb(248,48,92) ;
+    color: white;
+    border-radius: 60px;
+    font-weight: 700;
+    padding: auto;
 }
 
-.btn1:hover,
-.btn4:hover {
-    background-color: rgb(255, 50, 80);
-}
 
-/* TYPOGRAPHY */
-h1 {
-    font-weight: 700; /* FIXED (removed px) */
-}
+.btn1:hover{
 
-/* APPLE SECTION */
-.apple {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                url('../images/d3.jpg') no-repeat center center/cover;
+    background-color: rgb(255,50,80);
+    transition: .0.5s;
+
+}
+/* .contain{
+    display: flex;
+} */
+
+.apple{
+    background: linear-gradient(rgb(0,0,0,0.2),rgba(0,0,0,0.2)),url(/images/d3.jpg)no-repeat;
+    background-size: cover;
     height: 80vh;
     width: 100%;
-    color: white;
+    object-fit: cover;
+    background-position: 50% 50%;
+}
+.apple h1{
+    font-family: 'lobster','cursive';
+
 }
 
-.apple h1 {
-    font-family: 'Lobster', cursive;
-}
-
-/* NEWS / FOOTER */
-.news {
+.news{
     background-color: black;
     color: white;
 }
 
-.news input {
+.btn2{
+    height: 45px;
+    width: 100px;
+    background: white;
+    margin-left: 10px;
+    border: solid 2px white;
+    font-weight: 600;
+}
+
+.news input{
     height: 45px;
     width: 55%;
     border: 2px solid white;
@@ -118,148 +142,111 @@ h1 {
     background-color: black;
     color: white;
     margin-top: 20px;
-    padding-left: 10px;
-}
-
-/* FIXED placeholder selector */
-.news input::placeholder {
-    color: white;
-}
-
-.btn2 {
-    height: 45px;
-    width: 100px;
-    background: white;
-    margin-left: 10px;
-    border: 2px solid white;
     font-weight: 600;
 }
 
-.news p {
-    margin: 0;
+.news::placeholder{
+    color: white;
 }
 
-/* SOCIAL ICONS */
-.fab {
-    font-size: 2rem;
+.news p{
+    margin:0 ;
+}
+
+.fab{
+    font-size: 2.5rem;
     cursor: pointer;
     padding-right: 10px;
-    transition: 0.3s;
 }
 
-.fab:hover {
-    color: rgb(248, 48, 92);
-}
-
-/* CARD HOVER EFFECT */
-.card {
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
+.card:hover{
     box-shadow: 2px -1px 25px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px -1px 25px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -1px 25px -4px rgba(0,0,0,0.75);
 }
 
-/* RESPONSIVENESS */
+
+
+/* GENERAL MOBILE FIXES */
+body {
+  overflow-x: hidden;
+}
+
+/* NAVBAR FIX */
 @media (max-width: 768px) {
-    .main h2 {
-        font-size: 2rem;
-    }
+  .navbar .form-control,
+  .navbar .search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
-    .btn1,
-    .btn4 {
-        width: 80%;
-    }
-
-    .search {
-        width: 60%;
-    }
+  .navbar .btn0 {
+    width: 100%;
+  }
 }
 
-@media (max-width: 400px) {
-    .main {
-        height: 70vh;
-    }
+/* HERO SECTION */
+@media (max-width: 768px) {
+  .main h2 {
+    font-size: 24px;
+  }
+
+  .main {
+    text-align: center;
+  }
 }
 
-
-
-    /* APPLE */
-    .apple {
-        height: auto;
-        padding: 60px 20px;
-        text-align: center;
-    }
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-
-/* ================= MOBILE (576px - 767px) ================= */
-@media (max-width: 767px) {
-
-    /* HERO */
-    .main h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    /* BUTTONS */
-    .btn1, .btn4 {
-        width: 85%;
-    }
-
-    /* NEWS INPUT */
-    .news input {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .btn2 {
-        width: 100%;
-    }
-
-    /* TEXT ALIGN */
-    .apple,
-    .contact,
-    .about {
-        text-align: center;
-    }
+/* PRODUCT GRID FIX */
+@media (max-width: 768px) {
+  .product .col-4,
+  .shop .col-4 {
+    width: 100%;
+  }
 }
 
+/* ABOUT SECTION */
+@media (max-width: 768px) {
+  .about .col-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 
-/* ================= SMALL PHONES (≤575px) ================= */
-@media (max-width: 575px) {
+/* CONTACT SECTION */
+@media (max-width: 768px) {
+  .contact .col-lg-4,
+  .contact .col-lg-7 {
+    width: 100%;
+  }
 
-    /* HERO */
-    .main {
-        padding: 60px 15px;
-    }
+  .contact input,
+  .contact textarea {
+    margin-bottom: 10px;
+  }
+}
 
-    .main h2 {
-        font-size: 1.6rem;
-    }
+/* NEWSLETTER */
+@media (max-width: 768px) {
+  .news input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
-    /* HEADINGS */
-    h1 {
-        font-size: 1.5rem;
-    }
+  .news .btn2 {
+    width: 100%;
+  }
+}
 
-    h6 {
-        font-size: 0.9rem;
-    }
-
-    /* BUTTONS */
-    .btn1, .btn4 {
-        width: 100%;
-    }
-
-    /* CARDS */
-    .card {
-        margin-bottom: 15px;
-    }
-
-    /* SOCIAL ICONS */
-    .fab {
-        font-size: 1.8rem;
-    }
+/* FOOTER */
+@media (max-width: 768px) {
+  .news .col-lg-3 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
