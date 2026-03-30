@@ -87,7 +87,19 @@
 
 .btn4{
     height: 45px;
-    width: 80%;
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color:rgb(248,48,92) ;
+    color: white;
+    border-radius: 60px;
+    font-weight: 700;
+    padding: auto;
+}
+
+.btn5{
+    height: 50px;
+    width: 100%;
     border: none;
     outline: none;
     background-color:rgb(248,48,92) ;
